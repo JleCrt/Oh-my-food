@@ -1,0 +1,15 @@
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: $font_primary;
+    background-color: $color_background_bis;
+    h1 {
+        padding: 35px 50px 20px 50px;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+}
