@@ -1,4 +1,5 @@
 .presentation{
+    font-family: $font_primary;
     h1 {
     font-size: 24px;
     }
@@ -6,5 +7,10 @@
     font-size: 18px;
     font-weight: 300;
     }
-    
+}
+.fonction {
+    font-family: $font_primary;
+    h2 {
+        font-weight: 700;
+    }
 }

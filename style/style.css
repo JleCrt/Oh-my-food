@@ -13,12 +13,22 @@ a {
   color: black;
 }
 
+.presentation {
+  font-family: "Roboto";
+}
 .presentation h1 {
   font-size: 24px;
 }
 .presentation p {
   font-size: 18px;
   font-weight: 300;
+}
+
+.fonction {
+  font-family: "Roboto";
+}
+.fonction h2 {
+  font-weight: 700;
 }
 
 .btn {
@@ -40,6 +50,11 @@ a {
 .btn:hover {
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.25);
   filter: brightness(105%);
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
 }
 
 /*@import "layout/_navigation";*/
@@ -96,8 +111,7 @@ header div input::placeholder {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: "Roboto";
-  background-color: #fafafa;
+  background-color: #F6F6F6;
 }
 .presentation h1 {
   padding: 35px 50px 20px 50px;
@@ -105,6 +119,60 @@ header div input::placeholder {
 }
 .presentation p {
   text-align: center;
+}
+
+.fonction {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.fonction h2 {
+  margin: 30px 0 25px;
+}
+.fonction .fonction-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.fonction .fonction-box .fonction-box-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 322px;
+  height: 72px;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.fonction .fonction-box .fonction-box-content:hover i {
+  color: #9356DC;
+}
+.fonction .fonction-box .fonction-box-content i {
+  position: absolute;
+  right: 272px;
+  text-align: center;
+  color: #7E7E7E;
+  font-size: 20px;
+}
+.fonction .fonction-box-order {
+  z-index: 2;
+  position: absolute;
+  left: -12px;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: #9356DC;
+  align-items: center;
+  justify-content: center;
+}
+.fonction .fonction-box-order p {
+  color: white;
+  text-align: center;
+  font-weight: 500;
 }
 
 /*@import "pages/_contact";
