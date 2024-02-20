@@ -15,6 +15,7 @@
 
 .fonction {
     margin: 0 20px;
+    margin-bottom: 68px;
     display: flex;
     flex-direction: column;
     h2 {
@@ -70,3 +71,60 @@
         }
 }
 
+#restaurants {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 64px;
+    background-color: $color_background_bis;
+    h2 {
+        margin: 40px 20px 20px 20px;
+    }
+    .container-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        gap: 18px;
+        .restaurant-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: 251px;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+            img {
+                width: 100%;
+                height: 174px;
+                object-fit: cover;
+                border-radius: 15px 15px 0 0;
+            }
+            .text-card {
+                width: 80%;
+                margin: 12px 0 41px 13px;
+                h3 {
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 20px;
+                }
+                p {
+                    font-size: 17px;
+                    font-weight: 300;
+                    line-height: 25px;
+                }
+            }
+            .heart-container {
+                position: absolute;
+                right: 24px;
+                bottom: 26px;
+                font-size: 28px;
+                .fa-solid {
+                    display: none;
+                }
+            }
+        }
+    }
+}
