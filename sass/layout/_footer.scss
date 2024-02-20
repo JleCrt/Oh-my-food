@@ -1,0 +1,28 @@
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 22px 35px;
+    background-color: $color_background;
+    img {
+        width: 137px;
+        height: 27px;
+        filter: invert(100%);
+        margin-bottom: 16px;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        a {
+            color: white;
+            display: flex;
+            i {
+                font-size: 16px;
+                width: 28px;
+                text-align: left;
+            }
+        }
+    }
+}
