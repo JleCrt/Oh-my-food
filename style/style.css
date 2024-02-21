@@ -115,6 +115,27 @@ header div input::placeholder {
   color: black;
 }
 
+.header-restaurants {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 63px;
+  gap: 42px;
+  padding: 10px 0 13px 17px;
+}
+.header-restaurants .fa-arrow-left {
+  font-size: 24px;
+  display: flex;
+}
+.header-restaurants img {
+  display: flex;
+  width: 162px;
+  height: 34px;
+  padding: 0 19px 0 16px;
+}
+
 footer {
   width: 100%;
   height: auto;
@@ -272,7 +293,39 @@ footer .footer-content a i {
   display: none;
 }
 
-/*@import "pages/_contact";
+.menu-photo img {
+  width: 100%;
+  height: 275px;
+}
+
+.menu {
+  width: 100%;
+  height: auto;
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.menu .restaurant-title {
+  font-family: "Shrikhand";
+  font-size: 16px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+}
+.menu .menu-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.menu .menu-section .plate-title {
+  font-weight: 300;
+  font-size: 16px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/*@import "pages/_contact"; 
 @import "utils/functions";
 @import "utils/mixins";*/
 
