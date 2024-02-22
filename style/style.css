@@ -250,6 +250,23 @@ footer .footer-content a i {
   background-color: white;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
+#restaurants .container-card .restaurant-card .restaurant-new {
+  position: absolute;
+  width: 80px;
+  height: 29px;
+  background-color: #99E2D0;
+  color: #008766;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  right: 15px;
+  top: 15px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
 #restaurants .container-card .restaurant-card img {
   width: 100%;
   height: 174px;
