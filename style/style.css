@@ -76,6 +76,7 @@ header {
   justify-content: center;
 }
 header .header-logo {
+  position: relative;
   z-index: 2;
   display: flex;
   align-items: center;
@@ -86,7 +87,7 @@ header .header-logo {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 header .header-logo img {
-  width: 197px;
+  width: 162px;
 }
 header div {
   z-index: 1;
@@ -114,26 +115,12 @@ header div input {
 header div input::placeholder {
   color: black;
 }
-
-.header-restaurants {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: 63px;
-  gap: 42px;
-  padding: 10px 0 13px 17px;
-}
-.header-restaurants .fa-arrow-left {
+header .fa-arrow-left {
+  position: absolute;
+  left: 17px;
+  z-index: 2;
+  top: 19px;
   font-size: 24px;
-  display: flex;
-}
-.header-restaurants img {
-  display: flex;
-  width: 162px;
-  height: 34px;
-  padding: 0 19px 0 16px;
 }
 
 footer {
@@ -170,7 +157,7 @@ footer .footer-content a i {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #F6F6F6;
+  background-color: #fafafa;
 }
 .presentation h1 {
   padding: 35px 50px 20px 50px;
@@ -204,7 +191,7 @@ footer .footer-content a i {
   width: 322px;
   height: 72px;
   border-radius: 20px;
-  background-color: #F6F6F6;
+  background-color: #fafafa;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 .fonction .fonction-box .fonction-box-content:hover i {
@@ -240,7 +227,7 @@ footer .footer-content a i {
   flex-direction: column;
   width: 100%;
   padding-bottom: 64px;
-  background-color: #F6F6F6;
+  background-color: #fafafa;
 }
 #restaurants h2 {
   margin: 40px 20px 20px 20px;
@@ -293,36 +280,101 @@ footer .footer-content a i {
   display: none;
 }
 
-.menu-photo img {
+.menu-photo {
   width: 100%;
   height: 275px;
+  object-fit: cover;
 }
 
-.menu {
+.menus {
   width: 100%;
   height: auto;
   font-family: "Roboto";
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 12px;
+  border-radius: 30px 30px 0 0;
+  background-color: #fafafa;
+  margin-top: -40px;
+  padding-top: 32px;
+  position: relative;
 }
-.menu .restaurant-title {
+.menus .restaurant-title {
   font-family: "Shrikhand";
   font-size: 16px;
   font-weight: 300;
   display: flex;
-  flex-direction: row;
-}
-.menu .menu-section {
-  display: flex;
-  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
-.menu .menu-section .plate-title {
+.menus .restaurant-title h1 {
+  padding-left: 12px;
+  width: 70%;
+}
+.menus .restaurant-title .heart-container-title {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+.menus .restaurant-title .heart-container-title .fa-solid {
+  display: none;
+}
+.menus .menu-section {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 12px 0 12px;
+  gap: 40px;
+}
+.menus .menu-section .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.menus .menu-section .menu h2 {
+  font-family: "Roboto";
   font-weight: 300;
   font-size: 16px;
+  width: 40px;
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+  border-bottom: solid 3px #99E2D0;
+}
+.menus .menu-section .menu .menu-card {
   display: flex;
-  align-items: flex-start;
+  width: 100%;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+}
+.menus .menu-section .menu .menu-card .plate {
+  height: 40px;
+  padding: 15px 0 15px 15px;
+  width: 90%;
+}
+.menus .menu-section .menu .menu-card .plate h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.menus .menu-section .menu .menu-card .plate p {
+  font-size: 15px;
+  font-weight: 300;
+}
+.menus .menu-section .menu .menu-card .price {
+  width: 10%;
+  padding: 36px 10px 0 10px;
+  text-align: right;
+}
+.menus .menu-section .menu .menu-card .price span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.menus .command-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /*@import "pages/_contact"; 
