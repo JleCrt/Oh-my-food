@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   min-width: 375px;
   margin: 0;
@@ -104,16 +105,14 @@ header div .header-location {
   width: 12px;
   height: 16px;
 }
-header div input {
+header div p {
   width: 109px;
   height: 19px;
   border: none;
   background-color: #eaeaea;
   font-size: 16px;
   color: black;
-}
-header div input::placeholder {
-  color: black;
+  font-family: "Roboto";
 }
 header .fa-arrow-left {
   position: absolute;
@@ -137,21 +136,23 @@ footer img {
   filter: invert(100%);
   margin-bottom: 16px;
 }
-footer .footer-content {
+
+.footer-content {
   display: flex;
   flex-direction: column;
   gap: 7px;
 }
-footer .footer-content a {
+.footer-content a {
   color: white;
   display: flex;
 }
-footer .footer-content a i {
+.footer-content a i {
   font-size: 16px;
   width: 28px;
   text-align: left;
 }
 
+/** Présentation **/
 .presentation {
   display: flex;
   align-items: center;
@@ -167,6 +168,7 @@ footer .footer-content a i {
   text-align: center;
 }
 
+/** Fonctionnement **/
 .fonction {
   margin: 0 20px;
   margin-bottom: 68px;
@@ -176,14 +178,16 @@ footer .footer-content a i {
 .fonction h2 {
   margin: 30px 0 25px;
 }
-.fonction .fonction-box {
+
+.fonction-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 24px;
 }
-.fonction .fonction-box .fonction-box-content {
+
+.fonction-box-content {
   position: relative;
   display: flex;
   align-items: center;
@@ -194,17 +198,18 @@ footer .footer-content a i {
   background-color: #fafafa;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-.fonction .fonction-box .fonction-box-content:hover i {
-  color: #9356DC;
-}
-.fonction .fonction-box .fonction-box-content i {
+.fonction-box-content i {
   position: absolute;
   right: 272px;
   text-align: center;
   color: #7E7E7E;
   font-size: 20px;
 }
-.fonction .fonction-box-order {
+.fonction-box-content:hover i {
+  color: #9356DC;
+}
+
+.fonction-box-order {
   z-index: 2;
   position: absolute;
   left: -12px;
@@ -216,12 +221,13 @@ footer .footer-content a i {
   align-items: center;
   justify-content: center;
 }
-.fonction .fonction-box-order p {
+.fonction-box-order p {
   color: white;
   text-align: center;
   font-weight: 500;
 }
 
+/** Restaurants **/
 #restaurants {
   display: flex;
   flex-direction: column;
@@ -232,7 +238,8 @@ footer .footer-content a i {
 #restaurants h2 {
   margin: 40px 20px 20px 20px;
 }
-#restaurants .container-card {
+
+.container-card {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -240,7 +247,8 @@ footer .footer-content a i {
   align-items: center;
   gap: 18px;
 }
-#restaurants .container-card .restaurant-card {
+
+.restaurant-card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -250,7 +258,7 @@ footer .footer-content a i {
   background-color: white;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
-#restaurants .container-card .restaurant-card .restaurant-new {
+.restaurant-card .restaurant-new {
   position: absolute;
   width: 80px;
   height: 29px;
@@ -267,33 +275,36 @@ footer .footer-content a i {
   top: 15px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
-#restaurants .container-card .restaurant-card img {
+
+.restaurant-photo {
   width: 100%;
   height: 174px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-#restaurants .container-card .restaurant-card .text-card {
+
+.text-card {
   width: 80%;
   margin: 12px 0 41px 13px;
 }
-#restaurants .container-card .restaurant-card .text-card h3 {
+.text-card h3 {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
 }
-#restaurants .container-card .restaurant-card .text-card p {
+.text-card p {
   font-size: 17px;
   font-weight: 300;
   line-height: 25px;
 }
-#restaurants .container-card .restaurant-card .heart-container {
+
+.heart-container {
   position: absolute;
   right: 24px;
   bottom: 26px;
   font-size: 28px;
 }
-#restaurants .container-card .restaurant-card .heart-container .fa-solid {
+.heart-container .fa-solid {
   display: none;
 }
 
@@ -316,7 +327,15 @@ footer .footer-content a i {
   padding-top: 32px;
   position: relative;
 }
-.menus .restaurant-title {
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 12px 0 12px;
+  gap: 40px;
+}
+
+.restaurant-title {
   font-family: "Shrikhand";
   font-size: 16px;
   font-weight: 300;
@@ -324,32 +343,27 @@ footer .footer-content a i {
   align-items: center;
   width: 100%;
 }
-.menus .restaurant-title h1 {
+.restaurant-title h1 {
   padding-left: 12px;
   width: 70%;
 }
-.menus .restaurant-title .heart-container-title {
+.restaurant-title .heart-container-title {
   display: flex;
   width: 30%;
   align-items: center;
   justify-content: center;
   font-size: 28px;
 }
-.menus .restaurant-title .heart-container-title .fa-solid {
+.restaurant-title .heart-container-title .fa-solid {
   display: none;
 }
-.menus .menu-section {
-  display: flex;
-  flex-direction: column;
-  margin: 12px 12px 0 12px;
-  gap: 40px;
-}
-.menus .menu-section .menu {
+
+.menu {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.menus .menu-section .menu h2 {
+.menu h2 {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 16px;
@@ -358,36 +372,39 @@ footer .footer-content a i {
   margin-bottom: 12px;
   border-bottom: solid 3px #99E2D0;
 }
-.menus .menu-section .menu .menu-card {
+
+.menu-card {
   display: flex;
   width: 100%;
   border-radius: 15px;
   background-color: white;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
 }
-.menus .menu-section .menu .menu-card .plate {
+.menu-card .plate {
   height: 40px;
   padding: 15px 0 15px 15px;
   width: 90%;
 }
-.menus .menu-section .menu .menu-card .plate h3 {
+.menu-card .plate h3 {
   font-size: 18px;
   font-weight: 500;
 }
-.menus .menu-section .menu .menu-card .plate p {
+.menu-card .plate p {
   font-size: 15px;
   font-weight: 300;
 }
-.menus .menu-section .menu .menu-card .price {
+
+.price {
   width: 10%;
   padding: 36px 10px 0 10px;
   text-align: right;
 }
-.menus .menu-section .menu .menu-card .price span {
+.price span {
   font-size: 16px;
   font-weight: 500;
 }
-.menus .command-btn {
+
+.command-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
