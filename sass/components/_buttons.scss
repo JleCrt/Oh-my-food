@@ -1,7 +1,8 @@
 .btn {
     display: block;
-    height: 50px;
     width: 218px;
+    height: 50px;
+    margin: 40px 0;
     border: none;
     border-radius: 25px;
     background: $gradient;
@@ -12,7 +13,6 @@
     font-weight: 500;
     font-family: $font_primary, sans-serif;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    margin: 40px 0;
     &:hover {
         box-shadow: 0 0 14px rgba(0, 0, 0, 0.25);
         filter: brightness(105%);
@@ -22,5 +22,4 @@
 .box {
     display: flex;
     flex-direction: row;
-
 }

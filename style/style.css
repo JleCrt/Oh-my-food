@@ -44,8 +44,9 @@ footer {
 
 .btn {
   display: block;
-  height: 50px;
   width: 218px;
+  height: 50px;
+  margin: 40px 0;
   border: none;
   border-radius: 25px;
   background: linear-gradient(355deg, #9356DC 0%, #FF79DA 100%);
@@ -56,7 +57,6 @@ footer {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  margin: 40px 0;
 }
 .btn:hover {
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.25);
@@ -70,11 +70,11 @@ footer {
 
 /*@import "layout/_navigation";*/
 header {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 header .header-logo {
   position: relative;
@@ -92,13 +92,13 @@ header .header-logo img {
 }
 header div {
   z-index: 1;
-  background-color: #eaeaea;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   height: 50px;
   gap: 17px;
+  background-color: #eaeaea;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 header div .header-location {
@@ -108,25 +108,25 @@ header div .header-location {
 header div p {
   width: 109px;
   height: 19px;
-  border: none;
   background-color: #eaeaea;
   font-size: 16px;
   color: black;
   font-family: "Roboto";
+  border: none;
 }
 header .fa-arrow-left {
   position: absolute;
-  left: 17px;
   z-index: 2;
+  left: 17px;
   top: 19px;
   font-size: 24px;
 }
 
 footer {
-  width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: auto;
   padding: 22px 35px;
   background-color: #353535;
 }
@@ -147,17 +147,17 @@ footer img {
   display: flex;
 }
 .footer-content a i {
-  font-size: 16px;
   width: 28px;
+  font-size: 16px;
   text-align: left;
 }
 
 /** Présentation **/
 .presentation {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   background-color: #fafafa;
 }
 .presentation h1 {
@@ -170,10 +170,10 @@ footer img {
 
 /** Fonctionnement **/
 .fonction {
-  margin: 0 20px;
-  margin-bottom: 68px;
   display: flex;
   flex-direction: column;
+  margin: 0 20px;
+  margin-bottom: 68px;
 }
 .fonction h2 {
   margin: 30px 0 25px;
@@ -194,15 +194,15 @@ footer img {
   justify-content: center;
   width: 322px;
   height: 72px;
-  border-radius: 20px;
   background-color: #fafafa;
+  border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 .fonction-box-content i {
   position: absolute;
   right: 272px;
-  text-align: center;
   color: #7E7E7E;
+  text-align: center;
   font-size: 20px;
 }
 .fonction-box-content:hover i {
@@ -210,16 +210,16 @@ footer img {
 }
 
 .fonction-box-order {
-  z-index: 2;
   position: absolute;
+  z-index: 2;
   left: -12px;
   display: flex;
-  width: 24px;
-  height: 24px;
-  border-radius: 100%;
-  background-color: #9356DC;
   align-items: center;
   justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  border-radius: 100%;
 }
 .fonction-box-order p {
   color: white;
@@ -242,9 +242,9 @@ footer img {
 .container-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   height: auto;
-  align-items: center;
   gap: 18px;
 }
 
@@ -254,32 +254,32 @@ footer img {
   flex-direction: column;
   width: 90%;
   height: 251px;
-  border-radius: 15px;
   background-color: white;
+  border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
 .restaurant-card .restaurant-new {
   position: absolute;
-  width: 80px;
-  height: 29px;
-  background-color: #99E2D0;
-  color: #008766;
-  border-radius: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  font-weight: 500;
+  width: 80px;
+  height: 29px;
   margin: 0;
   right: 15px;
   top: 15px;
+  background-color: #99E2D0;
+  color: #008766;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .restaurant-photo {
+  object-fit: cover;
   width: 100%;
   height: 174px;
-  object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 
@@ -309,23 +309,23 @@ footer img {
 }
 
 .menu-photo {
+  object-fit: cover;
   width: 100%;
   height: 275px;
-  object-fit: cover;
 }
 
 .menus {
-  width: 100%;
-  height: auto;
-  font-family: "Roboto";
+  position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: auto;
   gap: 12px;
-  border-radius: 30px 30px 0 0;
-  background-color: #fafafa;
   margin-top: -40px;
   padding-top: 32px;
-  position: relative;
+  font-family: "Roboto";
+  background-color: #fafafa;
+  border-radius: 30px 30px 0 0;
 }
 
 .menu-section {
@@ -336,22 +336,22 @@ footer img {
 }
 
 .restaurant-title {
-  font-family: "Shrikhand";
-  font-size: 16px;
-  font-weight: 300;
   display: flex;
   align-items: center;
   width: 100%;
+  font-family: "Shrikhand";
+  font-size: 16px;
+  font-weight: 300;
 }
 .restaurant-title h1 {
-  padding-left: 12px;
   width: 70%;
+  padding-left: 12px;
 }
 .restaurant-title .heart-container-title {
   display: flex;
-  width: 30%;
   align-items: center;
   justify-content: center;
+  width: 30%;
   font-size: 28px;
 }
 .restaurant-title .heart-container-title .fa-solid {
@@ -364,26 +364,26 @@ footer img {
   gap: 10px;
 }
 .menu h2 {
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 16px;
   width: 40px;
   padding-bottom: 4px;
   margin-bottom: 12px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
   border-bottom: solid 3px #99E2D0;
 }
 
 .menu-card {
   display: flex;
   width: 100%;
-  border-radius: 15px;
   background-color: white;
+  border-radius: 15px;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
 }
 .menu-card .plate {
+  width: 90%;
   height: 40px;
   padding: 15px 0 15px 15px;
-  width: 90%;
 }
 .menu-card .plate h3 {
   font-size: 18px;
