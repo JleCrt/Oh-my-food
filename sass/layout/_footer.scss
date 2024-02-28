@@ -18,7 +18,7 @@ footer {
     flex-direction: column;
     gap: 7px;
     a {
-        color: white;
+        color: $color_fifth;
         display: flex;
         i {
             width: 28px;
@@ -26,4 +26,21 @@ footer {
             text-align: left;
         }
     }
+}
+
+
+    /** ------ Tablet ------**/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+}
+
+
+    /** ------ Desktop ------**/
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
 }

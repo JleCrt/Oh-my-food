@@ -1,4 +1,4 @@
-        /** Présentation **/
+  /** Présentation **/
 
 .presentation {
     display: flex;
@@ -71,12 +71,11 @@
     background-color: $color_primary;
     border-radius: 100%;
     p {
-        color: white;
+        color: $color_fifth;
         text-align: center;
         font-weight: 500;
     }
 }
-
         /** Restaurants **/
 
 #restaurants {
@@ -105,7 +104,7 @@
     flex-direction: column;
     width: 90%;
     height: 251px;
-    background-color: white;
+    background-color: $color_background_third;
     border-radius: 15px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
     .restaurant-new {
@@ -157,4 +156,34 @@
     .fa-solid {
         display: none;
     }
+}
+
+
+    /** ------ Tablet ------**/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    }
+
+
+   /** ------ Desktop ------**/
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+
+.fonction-box {
+        display: flex;
+        flex-direction: row;
+}
+
+#restaurants {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding: 0 180px;
+    margin-bottom: 30px;
+}
+
+.container-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 }
