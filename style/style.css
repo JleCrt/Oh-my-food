@@ -159,6 +159,30 @@ footer img {
 }
 
 /** ------ Tablet ------**/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 80px;
+    padding: 0 20px 10px;
+  }
+  footer .footer-logo {
+    margin: 0;
+    padding-top: 16px;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .footer-link-icon {
+    width: 186px;
+    white-space: nowrap;
+  }
+}
 /** ------ Desktop ------**/
 @media screen and (min-width: 1024px) {
   footer {
@@ -215,7 +239,7 @@ footer img {
     gap: 24px;
   }
   .fonction-box-ticket {
-    width: 100%;
+    width: 330px;
   }
   .fonction-box-content {
     position: relative;
@@ -480,6 +504,29 @@ footer img {
 }
 
 /** ------ Tablet ------**/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menus {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  }
+  .restaurant-title {
+    justify-content: center;
+    width: 100%;
+  }
+  .restaurant-title .heart-container-title {
+    position: inherit;
+    padding-left: 32px;
+  }
+  .menu-section {
+    padding: 0 60px;
+  }
+}
 /** ------ Desktop ------**/
 @media screen and (min-width: 1024px) {
   #page {
