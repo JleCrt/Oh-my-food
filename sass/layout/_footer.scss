@@ -28,19 +28,42 @@ footer {
     }
 }
 
+.footer-link {
+    width: 130px;
+    font-weight: 300;
+}
 
     /** ------ Tablet ------**/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-}
 
 }
 
 
     /** ------ Desktop ------**/
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) {
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    width: auto;
+    height: 54px;
+    padding: 30px 60px;
+    .footer-logo {
+        margin: 0;
+    }
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer-link-icon {
+    width: 186px;
+    white-space: nowrap;
+}
 
 }
