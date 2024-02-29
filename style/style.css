@@ -41,6 +41,12 @@ footer {
   font-weight: 500;
 }
 
+/** Desktop **/
+@media screen and (min-width: 1024px) {
+  .presentation h1 {
+    font-size: 32px;
+  }
+}
 .btn {
   display: block;
   width: 218px;
