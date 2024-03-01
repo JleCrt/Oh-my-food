@@ -156,6 +156,14 @@
     }
 }
 
+#like {
+    position: absolute;
+    bottom: 0.1em;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+}
+
 .heart-container {
     position: absolute;
     right: 24px;
@@ -165,6 +173,19 @@
         display: none;
     }
 }
+
+.heart-container:hover {
+    .fa-regular {
+        display: none;
+    }
+    .fa-solid {
+        display: inline-block;
+        color: transparent;
+        background-clip: text;
+        background-image: $gradient;
+    }
+}
+
 }
 
     /** ------ Tablet ------**/
