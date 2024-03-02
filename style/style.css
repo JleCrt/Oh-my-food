@@ -516,14 +516,29 @@ footer img {
   width: 92%;
   height: 40px;
   padding: 15px 0 15px 15px;
+  overflow: hidden;
 }
 .menu-card .plate h3 {
   font-size: 18px;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu-card .plate p {
   font-size: 15px;
   font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu-card:hover .checked {
+  width: 59px;
+  transform: scaleX(1);
+}
+.menu-card:hover .checked i {
+  display: inline;
 }
 
 .price {
@@ -534,6 +549,23 @@ footer img {
 .price span {
   font-size: 16px;
   font-weight: 500;
+}
+
+.checked {
+  width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: width 600ms 150ms ease-in-out;
+}
+.checked i {
+  display: none;
+  font-size: 20px;
 }
 
 .command-btn {
