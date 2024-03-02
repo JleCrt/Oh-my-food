@@ -73,6 +73,60 @@ footer {
   flex-direction: row;
 }
 
+/** COEUR **/
+#like {
+  position: absolute;
+  opacity: 0;
+  right: 22px;
+  bottom: 24px;
+  width: 26px;
+  height: 26px;
+}
+
+.heart-container i {
+  position: absolute;
+  transition: all 400ms ease-in-out;
+}
+.heart-container .heart-liked {
+  background-image: linear-gradient(355deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+.heart-container:hover .heart-liked {
+  opacity: 1;
+}
+
+.heart-home i {
+  right: 24px;
+  bottom: 26px;
+  font-size: 28px;
+}
+
+.heart-title i {
+  top: 36px;
+  font-size: 28px;
+}
+
+/******** Desktop ********/
+@media all and (min-width: 1024px) {
+  .restaurant-title {
+    width: 100%;
+  }
+  .restaurant-title h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .heart-title {
+    position: absolute;
+    width: 0;
+  }
+  .fa-heart {
+    right: 170px;
+  }
+}
 /*@import "layout/_navigation";*/
 header {
   display: flex;
@@ -132,7 +186,6 @@ header .fa-arrow-left {
 footer {
   display: flex;
   flex-direction: column;
-  width: 100%;
   height: auto;
   padding: 22px 35px;
   background-color: #353535;
@@ -244,9 +297,6 @@ footer img {
     justify-content: center;
     gap: 24px;
   }
-  .fonction-box-ticket {
-    width: 330px;
-  }
   .fonction-box-content {
     position: relative;
     display: flex;
@@ -354,31 +404,6 @@ footer img {
     font-weight: 300;
     line-height: 25px;
   }
-  #like {
-    position: absolute;
-    bottom: 0.1em;
-    width: 30px;
-    height: 30px;
-    opacity: 0;
-  }
-  .heart-container {
-    position: absolute;
-    right: 24px;
-    bottom: 26px;
-    font-size: 28px;
-  }
-  .heart-container .fa-solid {
-    display: none;
-  }
-  .heart-container:hover .fa-regular {
-    display: none;
-  }
-  .heart-container:hover .fa-solid {
-    display: inline-block;
-    color: transparent;
-    background-clip: text;
-    background-image: linear-gradient(355deg, #9356DC 0%, #FF79DA 100%);
-  }
 }
 /** ------ Tablet ------**/
 /** ------ Desktop ------**/
@@ -462,14 +487,7 @@ footer img {
 .restaurant-title h1 {
   position: relative;
   padding-left: 12px;
-}
-.restaurant-title .heart-container-title {
-  position: absolute;
-  right: 36px;
-  font-size: 28px;
-}
-.restaurant-title .heart-container-title .fa-solid {
-  display: none;
+  width: 80%;
 }
 
 .menu {
@@ -495,7 +513,7 @@ footer img {
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
 }
 .menu-card .plate {
-  width: 90%;
+  width: 92%;
   height: 40px;
   padding: 15px 0 15px 15px;
 }
@@ -563,11 +581,17 @@ footer img {
   }
   .restaurant-title {
     justify-content: center;
+    gap: 24px;
     width: 100%;
   }
-  .restaurant-title .heart-container-title {
+  .restaurant-title h1 {
+    padding: 0;
+    border: solid 2px green;
+  }
+  .restaurant-title .heart-title {
     position: inherit;
-    padding-left: 32px;
+    right: 186px;
+    border: solid 2px red;
   }
   .menu-section {
     padding: 0 140px;

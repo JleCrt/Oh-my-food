@@ -23,3 +23,70 @@
     display: flex;
     flex-direction: row;
 }
+
+/** COEUR **/
+
+#like {
+    position: absolute;
+    opacity: 0;
+    right: 22px;
+    bottom: 24px;
+    width: 26px;
+    height: 26px;
+}
+
+.heart-container {
+    & i {
+        position: absolute;
+        transition: all 400ms ease-in-out;
+    }
+    & .heart-liked {
+        background-image: $gradient;  
+        background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        opacity: 0;
+    }
+    &:hover .heart-liked {
+        opacity: 1;
+    }
+}
+
+.heart-home {
+    & i {
+
+        right: 24px;
+        bottom: 26px;
+        font-size: 28px;
+    }
+}
+
+.heart-title {
+    i {
+        top: 36px;
+        font-size: 28px;
+    }
+}
+ 
+     /******** Desktop ********/
+
+@media all and (min-width:1024px) {
+
+.restaurant-title {
+    width: 100%;
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+.heart-title {
+    position: absolute;
+    width: 0;
+}
+    .fa-heart {
+        right: 170px;
+    }
+}

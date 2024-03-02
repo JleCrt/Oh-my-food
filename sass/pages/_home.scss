@@ -36,9 +36,6 @@
     gap: 24px;
 }
 
-.fonction-box-ticket {
-    width: 330px;
-}
 
 .fonction-box-content {
     position: relative;
@@ -153,36 +150,6 @@
         font-size: 17px;
         font-weight: 300;
         line-height: 25px;
-    }
-}
-
-#like {
-    position: absolute;
-    bottom: 0.1em;
-    width: 30px;
-    height: 30px;
-    opacity: 0;
-}
-
-.heart-container {
-    position: absolute;
-    right: 24px;
-    bottom: 26px;
-    font-size: 28px;
-    .fa-solid {
-        display: none;
-    }
-}
-
-.heart-container:hover {
-    .fa-regular {
-        display: none;
-    }
-    .fa-solid {
-        display: inline-block;
-        color: transparent;
-        background-clip: text;
-        background-image: $gradient;
     }
 }
 
