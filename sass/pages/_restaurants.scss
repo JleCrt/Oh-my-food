@@ -121,12 +121,40 @@
     }
 }
 
-
 .command-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+    /** Animation Menu **/
+
+.entrees {
+    animation: slide-menu 1s ease-in-out;
+}
+
+.plats {
+    animation: slide-menu 1s ease-in-out;
+    animation-delay: 0.4s;
+}
+
+.desserts {
+    animation: slide-menu 1s ease-in-out;
+    animation-delay: 0.8s;
+}
+
+@keyframes slide-menu {
+    0% {
+        transform: translateX(300px);
+        opacity: 0;}
+    20% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
     /** ------ Tablet ------**/
