@@ -561,7 +561,7 @@ footer img {
   border-radius: 0 15px 15px 0;
   transform: scaleX(0);
   transform-origin: right;
-  transition: width 600ms 150ms ease-in-out;
+  transition: width 450ms 150ms ease-in-out;
 }
 .checked i {
   display: none;
