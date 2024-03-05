@@ -695,6 +695,7 @@ footer img {
 }
 .menu-card:hover .checked i {
   display: inline;
+  animation: icocheck 400ms ease-in;
 }
 
 .price {
@@ -724,6 +725,14 @@ footer img {
   font-size: 20px;
 }
 
+@keyframes icocheck {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .command-btn {
   display: flex;
   flex-direction: column;
@@ -802,12 +811,10 @@ footer img {
   }
   .restaurant-title h1 {
     padding: 0;
-    border: solid 2px green;
   }
   .restaurant-title .heart-title {
     position: inherit;
     right: 186px;
-    border: solid 2px red;
   }
   .menu-section {
     padding: 0 140px;

@@ -90,6 +90,7 @@
         transform: scaleX(1);
         i {
             display: inline;
+            animation: icocheck 400ms ease-in;
         }
     }
 }
@@ -118,6 +119,15 @@
     i {
         display: none;
         font-size: 20px;
+    }
+}
+
+@keyframes icocheck {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
 
@@ -206,12 +216,10 @@
         width: 100%;
         h1 {
             padding: 0;
-            border: solid 2px green;
         }
         .heart-title {
             position: inherit;
             right: 186px;
-            border: solid 2px red;
         }
     }
     .menu-section {

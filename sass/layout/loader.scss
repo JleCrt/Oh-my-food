@@ -1,9 +1,4 @@
-$component-dimension: 180px;
-$timing: 2s;
-$color-shadow: lightgray;
-$pan-color-light: #643b96;
-$pan-color-dark: #9356DC;
-$loader-color: #FF79DA;
+
 
 @keyframes loader {
   0% {
@@ -116,7 +111,7 @@ $loader-color: #FF79DA;
     margin-bottom: -29px;
     margin-right: 90px;
     border: 10px solid transparent;
-    border-bottom: 10px solid $loader-color;
+    border-bottom: 10px solid $color_secondary;
     border-radius: 50%;
     animation: loader $timing;
     animation-timing-function: linear;
@@ -137,7 +132,7 @@ $loader-color: #FF79DA;
   .pan {
     width: 180px;
     height: 26px;
-    background: linear-gradient($pan-color-light, $pan-color-dark);
+    background: linear-gradient($pan-color-light, $color_primary);
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     background-color: transparent;
@@ -146,7 +141,7 @@ $loader-color: #FF79DA;
   .handle {
     width: 180px;
     height: 12px;
-    background: linear-gradient($pan-color-light, $pan-color-dark);
+    background: linear-gradient($pan-color-light, $color_primary);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
