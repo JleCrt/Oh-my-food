@@ -77,13 +77,13 @@
 }
 
 .animation-loader {
+    z-index: 4;
+    position: fixed;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     width: 100%;
     height: 100%;
-    z-index: 4;
-    position: fixed;
     top: 0;
     left: 0;
     animation: fade-out 0.5s ease-in-out 2.8s both;
@@ -97,8 +97,8 @@
 }
 
 .pan-loader {
-  flex-direction: column;
   z-index: 3;
+  flex-direction: column;
   width: $component-dimension;
   height: $component-dimension;
   margin: 0;
@@ -113,29 +113,29 @@
     border: 10px solid transparent;
     border-bottom: 10px solid $color_secondary;
     border-radius: 50%;
+    background-color: transparent;
+    box-shadow: none;
     animation: loader $timing;
     animation-timing-function: linear;
     animation-iteration-count: 2;
-    background-color: transparent;
-    box-shadow: none;
   }
   .pan-container {
     display: flex;
     width: 220px;
     height: auto;
-    animation: pan $timing;
-    animation-iteration-count: 2;
     background-color: transparent;
     box-shadow: none;
     gap: 0;
+    animation: pan $timing;
+    animation-iteration-count: 2;
   }
   .pan {
     width: 180px;
     height: 26px;
+    background-color: transparent;
     background: linear-gradient($pan-color-light, $color_primary);
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: transparent;
     box-shadow: none;
   }
   .handle {
@@ -151,13 +151,13 @@
   
   .shadow {
     align-items: flex-start;
-    margin-right: 120px;
     width: 58px;
     height: 8px;
+    margin-right: 120px;
     background: $color-shadow;
     border-radius: 20px;
+    box-shadow: none;
     animation: shadow $timing;
     animation-iteration-count: 2;
-    box-shadow: none;
   }
 }

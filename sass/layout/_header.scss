@@ -12,7 +12,7 @@ header {
         width: 100%;
         height: 50px;
         gap: 17px;
-        background-color: #eaeaea;
+        background-color: $color_background_fourth;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         .header-location {
             width: 12px;
@@ -21,15 +21,15 @@ header {
         p {
             width: 109px;
             height: 19px;
-            background-color: #eaeaea;
+            background-color: $color_background_fourth;
             border: none;
         }
     }
 }
 
 .header-logo {
-    position: relative;
     z-index: 2;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;

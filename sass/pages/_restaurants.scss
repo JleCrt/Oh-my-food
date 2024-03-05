@@ -115,12 +115,12 @@
 }
 
 .checked {
-    width: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     color: $color_background_third;
     background-color: $color_tertiary;
+    width: 0;
     border-radius: 0 15px 15px 0;
     transform: scaleX(0);
     transform-origin: right;
@@ -166,9 +166,9 @@
     }
 
 .menus {
-    width: 70%;
     display: flex;
     justify-content: center;
+    width: 70%;
     } 
     .restaurant-title {
         justify-content: center;
@@ -195,15 +195,15 @@
 }
 
 .menus {
-    width: 60%;
     display: flex;
     justify-content: center;
+    width: 60%;
 }
     
 .restaurant-title {
         justify-content: center;
-        gap: 24px;
         width: 100%;
+        gap: 24px;
         h1 {
             padding: 0;
         }
