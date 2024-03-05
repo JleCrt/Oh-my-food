@@ -32,6 +32,8 @@ footer {
     font-weight: 300;
 }
 
+                // MEDIA QUERIES //
+
     /** ------ Tablet ------**/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 footer {
@@ -57,13 +59,10 @@ footer {
     width: 186px;
     white-space: nowrap;
     }
-
 }
-
 
     /** ------ Desktop ------**/
 @media screen and (min-width: 1024px) {
-
 footer {
     display: flex;
     flex-direction: row-reverse;
@@ -86,5 +85,4 @@ footer {
     width: 186px;
     white-space: nowrap;
 }
-
 }

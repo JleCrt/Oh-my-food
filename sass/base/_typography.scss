@@ -1,10 +1,31 @@
+html {
+    font-size: 16px;
+}
+
+                /* HEADER */
+
+header {
+    div {
+        p {
+            font-size: 1rem;
+            color: black;
+            font-family: $font_primary;
+        }
+    }
+    .fa-arrow-left {
+        font-size: 1.5rem;
+    }
+}
+
+                /* HOME */
+
 .presentation{
     font-family: $font_primary;
     h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     }
     p {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
     }
 }
@@ -15,15 +36,83 @@
     }
 }
 
+.fonction-box-content {
+    i {
+        font-size: 1.25rem;
+    }
+}
+
 #restaurants {
     font-family: $font_primary;
 }
 
-footer {
-    font-family: $font_primary;
-    font-size: 16px;
+.restaurant-new {
+    font-size: 0.875rem;
     font-weight: 500;
 }
+
+.text-card {
+    h3 {
+        font-size: 1.125rem;
+        font-weight: 700;
+        line-height: 1.25rem;
+    }
+    p {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.6rem;
+    }
+}
+
+                /* PAGES RESTAURANTS */
+
+.restaurant-title {
+    font-family: $font_secondary;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.menu {
+    h2 {
+        font-family: $font_primary;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+}
+
+.menu-card {
+    h3 {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+}
+
+.price {
+    span {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+.checked {
+    i {
+        font-size: 1.25rem;
+    }
+}
+
+                /* FOOTER */
+
+footer {
+    font-family: $font_primary;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+                // MEDIA QUERIES //
 
 
     /** Desktop **/
@@ -32,7 +121,7 @@ footer {
 
 .presentation {
     h1 {
-        font-size: 32px;
+        font-size: 2rem;
     }
 }
 }

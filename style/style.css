@@ -170,14 +170,29 @@ a {
   color: black;
 }
 
+html {
+  font-size: 16px;
+}
+
+/* HEADER */
+header div p {
+  font-size: 1rem;
+  color: black;
+  font-family: "Roboto";
+}
+header .fa-arrow-left {
+  font-size: 1.5rem;
+}
+
+/* HOME */
 .presentation {
   font-family: "Roboto";
 }
 .presentation h1 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .presentation p {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
 }
 
@@ -188,20 +203,72 @@ a {
   font-weight: 700;
 }
 
+.fonction-box-content i {
+  font-size: 1.25rem;
+}
+
 #restaurants {
   font-family: "Roboto";
 }
 
+.restaurant-new {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.text-card h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+.text-card p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+}
+
+/* PAGES RESTAURANTS */
+.restaurant-title {
+  font-family: "Shrikhand";
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.menu h2 {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1rem;
+}
+.menu p {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.menu-card h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.price span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.checked i {
+  font-size: 1.25rem;
+}
+
+/* FOOTER */
 footer {
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 /** Desktop **/
 @media screen and (min-width: 1024px) {
   .presentation h1 {
-    font-size: 32px;
+    font-size: 2rem;
   }
 }
 .btn {
@@ -291,20 +358,6 @@ header {
   justify-content: center;
   width: 100%;
 }
-header .header-logo {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 63px;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-}
-header .header-logo img {
-  width: 162px;
-}
 header div {
   z-index: 1;
   display: flex;
@@ -324,21 +377,31 @@ header div p {
   width: 109px;
   height: 19px;
   background-color: #eaeaea;
-  font-size: 16px;
-  color: black;
-  font-family: "Roboto";
   border: none;
 }
-header .fa-arrow-left {
+
+.header-logo {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 63px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+.header-logo img {
+  width: 162px;
+}
+
+.fa-arrow-left {
   position: absolute;
   z-index: 2;
   left: 17px;
   top: 19px;
-  font-size: 24px;
 }
 
-/** ------ Tablet ------**/
-/** ------ Desktop ------**/
 footer {
   display: flex;
   flex-direction: column;
@@ -422,7 +485,7 @@ footer img {
   }
 }
 @media screen and (min-width: 320px) {
-  /** Présentation **/
+  /** PRÉSENTATION **/
   .presentation {
     display: flex;
     flex-direction: column;
@@ -437,7 +500,7 @@ footer img {
   .presentation p {
     text-align: center;
   }
-  /** Fonctionnement **/
+  /** FONCTIONNEMENT **/
   .fonction {
     display: flex;
     flex-direction: column;
@@ -469,7 +532,6 @@ footer img {
   .fonction-box-content i {
     color: #7E7E7E;
     text-align: center;
-    font-size: 20px;
   }
   .fonction-box-content:hover i {
     color: #9356DC;
@@ -494,7 +556,7 @@ footer img {
     text-align: center;
     font-weight: 500;
   }
-  /** Restaurants **/
+  /** RESTAURANTS **/
   #restaurants {
     display: flex;
     flex-direction: column;
@@ -536,8 +598,6 @@ footer img {
     background-color: #99E2D0;
     color: #008766;
     border-radius: 2px;
-    font-size: 14px;
-    font-weight: 500;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   }
   .restaurant-photo {
@@ -550,18 +610,7 @@ footer img {
     width: 80%;
     margin: 12px 0 41px 13px;
   }
-  .text-card h3 {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 20px;
-  }
-  .text-card p {
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 25px;
-  }
 }
-/** ------ Tablet ------**/
 /** ------ Desktop ------**/
 @media screen and (min-width: 1024px) {
   .fonction {
@@ -636,9 +685,6 @@ footer img {
   display: flex;
   align-items: center;
   width: 100%;
-  font-family: "Shrikhand";
-  font-size: 16px;
-  font-weight: 300;
 }
 .restaurant-title h1 {
   position: relative;
@@ -655,9 +701,6 @@ footer img {
   width: 40px;
   padding-bottom: 4px;
   margin-bottom: 12px;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 16px;
   border-bottom: solid 3px #99E2D0;
 }
 
@@ -675,15 +718,11 @@ footer img {
   overflow: hidden;
 }
 .menu-card .plate h3 {
-  font-size: 18px;
-  font-weight: 500;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 .menu-card .plate p {
-  font-size: 15px;
-  font-weight: 300;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -703,9 +742,27 @@ footer img {
   padding: 36px 10px 0 10px;
   text-align: right;
 }
-.price span {
-  font-size: 16px;
-  font-weight: 500;
+
+.command-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/** ANIMATION MENU **/
+.entrees {
+  animation: slide-menu 1s ease-in-out;
+}
+
+.plats {
+  animation: slide-menu 1s ease-in-out;
+  animation-delay: 0.4s;
+}
+
+.desserts {
+  animation: slide-menu 1s ease-in-out;
+  animation-delay: 0.8s;
 }
 
 .checked {
@@ -722,7 +779,6 @@ footer img {
 }
 .checked i {
   display: none;
-  font-size: 20px;
 }
 
 @keyframes icocheck {
@@ -733,28 +789,6 @@ footer img {
     opacity: 1;
   }
 }
-.command-btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/** Animation Menu **/
-.entrees {
-  animation: slide-menu 1s ease-in-out;
-}
-
-.plats {
-  animation: slide-menu 1s ease-in-out;
-  animation-delay: 0.4s;
-}
-
-.desserts {
-  animation: slide-menu 1s ease-in-out;
-  animation-delay: 0.8s;
-}
-
 @keyframes slide-menu {
   0% {
     transform: translateX(300px);

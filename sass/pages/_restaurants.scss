@@ -30,9 +30,6 @@
     display: flex;
     align-items: center;
     width: 100%;
-    font-family: $font_secondary;
-    font-size: 16px;
-    font-weight: 300;
         h1 {
             position: relative;
             padding-left: 12px;
@@ -49,9 +46,6 @@
         width: 40px;
         padding-bottom: 4px;
         margin-bottom: 12px;
-        font-family: $font_primary;
-        font-weight: 300;
-        font-size: 16px;
         border-bottom: solid 3px $color_tertiary;
     }
 }
@@ -68,15 +62,11 @@
         padding: 15px 0 15px 15px;
         overflow: hidden;
         h3 {
-            font-size: 18px;
-            font-weight: 500;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
         p {
-            font-size: 15px;
-            font-weight: 300;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -99,36 +89,6 @@
     width: 10%;
     padding: 36px 10px 0 10px;
     text-align: right;
-    span {
-        font-size: 16px;
-        font-weight: 500;
-    }
-}
-
-.checked {
-    width: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $color_background_third;
-    background-color: $color_tertiary;
-    border-radius: 0 15px 15px 0;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: width 450ms 150ms ease-in-out;
-    i {
-        display: none;
-        font-size: 20px;
-    }
-}
-
-@keyframes icocheck {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
 }
 
 .command-btn {
@@ -138,7 +98,7 @@
     justify-content: center;
 }
 
-    /** Animation Menu **/
+                /** ANIMATION MENU **/
 
 .entrees {
     animation: slide-menu 1s ease-in-out;
@@ -154,6 +114,32 @@
     animation-delay: 0.8s;
 }
 
+.checked {
+    width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color_background_third;
+    background-color: $color_tertiary;
+    border-radius: 0 15px 15px 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: width 450ms 150ms ease-in-out;
+    i {
+        display: none;
+    }
+}
+
+@keyframes icocheck {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
 @keyframes slide-menu {
     0% {
         transform: translateX(300px);
@@ -167,7 +153,10 @@
     }
 }
 
+                // MEDIA QUERIES //
+
     /** ------ Tablet ------**/
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
 #page { 
@@ -196,6 +185,7 @@
 
 
    /** ------ Desktop ------**/
+
 @media screen and (min-width: 1024px) {
 
 #page { 
