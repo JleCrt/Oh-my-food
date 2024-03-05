@@ -265,6 +265,10 @@ footer {
   font-weight: 500;
 }
 
+.footer-content a i {
+  font-size: 1rem;
+}
+
 /** Desktop **/
 @media screen and (min-width: 1024px) {
   .presentation h1 {
@@ -298,15 +302,6 @@ footer {
 }
 
 /** COEUR **/
-#like {
-  position: absolute;
-  opacity: 0;
-  right: 22px;
-  bottom: 24px;
-  width: 26px;
-  height: 26px;
-}
-
 .heart-container i {
   position: absolute;
   transition: all 400ms ease-in-out;
@@ -427,7 +422,6 @@ footer img {
 }
 .footer-content a i {
   width: 28px;
-  font-size: 16px;
   text-align: left;
 }
 
@@ -454,7 +448,7 @@ footer img {
   .footer-content {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    padding-left: 60px;
   }
   .footer-link-icon {
     width: 186px;
@@ -516,6 +510,9 @@ footer img {
     justify-content: center;
     gap: 24px;
   }
+  .fonction-box-ticket {
+    width: 90%;
+  }
   .fonction-box-content {
     position: relative;
     display: flex;
@@ -523,8 +520,8 @@ footer img {
     justify-content: flex-start;
     width: auto;
     height: 72px;
-    gap: 30px;
-    padding: 0 40px;
+    gap: 20px;
+    padding: 0 30px;
     background-color: #fafafa;
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -609,6 +606,12 @@ footer img {
   .text-card {
     width: 80%;
     margin: 12px 0 41px 13px;
+  }
+}
+/** Tablet **/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .fonction-box-ticket {
+    width: 40%;
   }
 }
 /** ------ Desktop ------**/
@@ -771,7 +774,7 @@ footer img {
   justify-content: center;
   color: white;
   background-color: #99E2D0;
-  width: 0;
+  width: 0px;
   border-radius: 0 15px 15px 0;
   transform: scaleX(0);
   transform-origin: right;
@@ -851,7 +854,7 @@ footer img {
     right: 186px;
   }
   .menu-section {
-    padding: 0 140px;
+    padding: 0 120px;
   }
 }
 /*@import "utils/functions";
