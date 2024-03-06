@@ -123,13 +123,13 @@ footer {
                 // MEDIA QUERIES //
 
 
-    /** Desktop **/
+/** ------ Desktop ------**/
 
-@media screen and (min-width: 1024px) {
+@include for-desktop {
 
-.presentation {
-    h1 {
-        font-size: 2rem;
+    .presentation {
+        h1 {
+            font-size: 2rem;
+        }
     }
-}
 }

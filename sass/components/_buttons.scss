@@ -1,82 +1,88 @@
-.btn {
-    display: block;
-    width: 218px;
-    height: 50px;
-    margin: 40px 0;
-    border: none;
-    border-radius: 25px;
-    background: $gradient;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    line-height: 50px;
-    font-weight: 500;
-    font-family: $font_primary, sans-serif;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    &:hover {
-        box-shadow: 0 0 14px rgba(0, 0, 0, 0.25);
-        filter: brightness(105%);
+@include mobile-first {
+
+    .btn {
+        display: block;
+        width: 218px;
+        height: 50px;
+        margin: 40px 0;
+        border: none;
+        border-radius: 25px;
+        background: $gradient;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        font-weight: 500;
+        font-family: $font_primary, sans-serif;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        &:hover {
+            box-shadow: 0 0 14px rgba(0, 0, 0, 0.25);
+            filter: brightness(105%);
+        }
     }
-}
 
-.box {
-    display: flex;
-    flex-direction: row;
-}
-
-/** COEUR **/
-
-.heart-container {
-    & i {
-        position: absolute;
-        transition: all 400ms ease-in-out;
-    }
-    & .heart-liked {
-        background-image: $gradient;  
-        background-clip: text; 
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        opacity: 0;
-    }
-    &:hover .heart-liked {
-        opacity: 1;
-    }
-}
-
-.heart-home {
-    & i {
-
-        right: 24px;
-        bottom: 26px;
-        font-size: 28px;
-    }
-}
-
-.heart-title {
-    i {
-        top: 36px;
-        font-size: 28px;
-    }
-}
- 
-     /******** Desktop ********/
-
-@media all and (min-width:1024px) {
-
-.restaurant-title {
-    width: 100%;
-    h1 {
+    .box {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: row;
+    }
 
+    /** COEUR **/
+
+    .heart-container {
+        & i {
+            position: absolute;
+            transition: all 400ms ease-in-out;
+        }
+        & .heart-liked {
+            background-image: $gradient;  
+            background-clip: text; 
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            opacity: 0;
+        }
+        &:hover .heart-liked {
+            opacity: 1;
+        }
+    }
+
+    .heart-home {
+        & i {
+
+            right: 24px;
+            bottom: 26px;
+            font-size: 28px;
+        }
+    }
+
+    .heart-title {
+        i {
+            top: 36px;
+            font-size: 28px;
+        }
     }
 }
 
-.heart-title {
-    position: absolute;
-    width: 0;
-}
+                // MEDIA QUERIES //
+
+/** ------ Desktop ------**/
+
+@include for-desktop  {
+
+    .restaurant-title {
+        width: 100%;
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    }
+
+    .heart-title {
+        position: absolute;
+        width: 0;
+    }
+
     .fa-heart {
         right: 170px;
     }

@@ -1,50 +1,53 @@
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    div {
-        z-index: 1;
+@include mobile-first {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        div {
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 50px;
+            gap: 17px;
+            background-color: $color_background_fourth;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            .header-location {
+                width: 12px;
+                height: 16px;
+            }
+            p {
+                width: 109px;
+                height: 19px;
+                background-color: $color_background_fourth;
+                border: none;
+            }
+        }
+    }
+
+    .header-logo {
+        z-index: 2;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 50px;
-        gap: 17px;
-        background-color: $color_background_fourth;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-        .header-location {
-            width: 12px;
-            height: 16px;
-        }
-        p {
-            width: 109px;
-            height: 19px;
-            background-color: $color_background_fourth;
-            border: none;
+        height: 63px;
+        background-color: $color_background_third;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        img {
+            width: 162px;
         }
     }
-}
 
-.header-logo {
-    z-index: 2;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 63px;
-    background-color: $color_background_third;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-    img {
-        width: 162px;
+    .fa-arrow-left {
+        position: absolute;
+        z-index: 2;
+        left: 17px;
+        top: 19px;
     }
-}
-
-.fa-arrow-left {
-    position: absolute;
-    z-index: 2;
-    left: 17px;
-    top: 19px;
 }
