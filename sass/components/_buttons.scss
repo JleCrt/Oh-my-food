@@ -43,6 +43,9 @@
         &:hover .heart-liked {
             opacity: 1;
         }
+        &:active .heart-liked {
+            opacity: 1;
+        }
     }
 
     .heart-home {

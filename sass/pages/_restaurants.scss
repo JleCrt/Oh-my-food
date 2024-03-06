@@ -76,7 +76,7 @@
         }
     }
 
-    .menu-card:hover {
+    .menu-card:hover, .menu-card:active {
         .checked {
             width: 59px;
             transform: scaleX(1);

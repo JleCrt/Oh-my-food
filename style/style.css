@@ -315,6 +315,9 @@ footer {
   .heart-container:hover .heart-liked {
     opacity: 1;
   }
+  .heart-container:active .heart-liked {
+    opacity: 1;
+  }
   .heart-home i {
     right: 24px;
     bottom: 26px;
@@ -721,11 +724,11 @@ footer {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  .menu-card:hover .checked {
+  .menu-card:hover .checked, .menu-card:active .checked {
     width: 59px;
     transform: scaleX(1);
   }
-  .menu-card:hover .checked i {
+  .menu-card:hover .checked i, .menu-card:active .checked i {
     display: inline;
     animation: icocheck 400ms ease-in;
   }
